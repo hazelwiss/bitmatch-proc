@@ -1,3 +1,5 @@
+## bitmatch-proc
+
 An alternative Rust crate for bitmatching. The crate supports bitmatching for let and match expressions, as well as a bitpack! macro for packing bits into a single value in any given order. 
 The provided macros works for const functions and ensures efficiency for bitmatching at runtime.
 
@@ -23,7 +25,7 @@ fn bitlet(val: u32) -> u32{
 }
 ``` 
 
-# Example for bitpacking values
+# Example for bitpacking values.
 ```rust
 fn bitpack(val: u32) -> u32{
   #[bitmatch]  
