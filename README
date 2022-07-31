@@ -2,7 +2,7 @@ An alternative Rust crate for bitmatching. The crate supports bitmatching for le
 The provided macros works for const functions and ensures efficiency for bitmatching at runtime.
 
 Example with a match expression.
-```Rust
+```rust
 fn bitmatch(val: u16) -> u32{
   #[bitmatch]
   match val {
@@ -14,7 +14,7 @@ fn bitmatch(val: u16) -> u32{
 ```
 
 Example with a let expression.
-```Rust
+```rust
 fn bitlet(val: u32) -> u32{
   #[bitmatch]
   let "xxxx_yyyy_xxxx_yyyy" = val;
@@ -23,7 +23,7 @@ fn bitlet(val: u32) -> u32{
 ``` 
 
 Example for bitpacking values
-```Rust
+```rust
 fn bitpack(val: u32) -> u32{
   #[bitmatch]  
   let "aaaa_bbbb_cccc_dddd" = val;
